@@ -1,0 +1,72 @@
+$xsm: 24rem;
+$sm: 35rem;
+$md: 48rem;
+$lg: 72rem;
+$xlg: 90rem;
+$xxlg: 120rem;
+$xxxlg: 240rem;
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-decoration: none;
+  position: absolute;
+  top: 27%;
+  z-index: 1;
+  gap: 0.8rem;
+  padding: 0.2rem;
+
+  @media screen and (min-width: $md) {
+    display: flex;
+    top: 25%;
+  }
+
+  @media screen and (min-width: $lg) {
+    display: flex;
+    position: relative;
+    gap: 4rem;
+    top: 0;
+  }
+}
+
+.button {
+  align-items: center;
+  border: 0;
+  background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 5px 9px rgba(131, 149, 167, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  padding: 0;
+  width: 7.125rem;
+  height: 5.75rem;
+
+  @media screen and (min-width: $lg) {
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+  }
+}
+
+.link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8125rem;
+  font: normal normal medium 13px / 20px Poppins;
+  color: #425966;
+  opacity: 1;
+
+  &__active {
+    text-decoration: none;
+    color: #d84a4a;
+  }
+}
+
+.svgMenu {
+  width: 1.8rem;
+  height: 2.8rem;
+}

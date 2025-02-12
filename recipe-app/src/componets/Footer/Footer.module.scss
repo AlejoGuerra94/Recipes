@@ -1,0 +1,67 @@
+$xsm: 24rem;
+$sm: 35rem;
+$md: 48rem;
+$lg: 72rem;
+$xlg: 90rem;
+$xxlg: 120rem;
+$xxxlg: 240rem;
+
+.footer {
+  width: 100%;
+  background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 4px 6px 23px #a9a9a911;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  min-height: 4.35rem;
+
+  @media screen and (min-width: $md) {
+    margin-top: 2rem;
+    height: 7.22rem;
+  }
+
+  @media screen and (min-width: $lg) {
+    margin-top: 0;
+    min-height: 10.43rem;
+  }
+
+  &__textFooter {
+    text-align: left;
+    color: #425966;
+    opacity: 1;
+    padding-left: 0.5rem;
+    font-size: 1.43rem;
+
+    @media screen and (min-width: $md) {
+      opacity: 1;
+      padding-left: 1.43rem;
+      font-size: 2.4rem;
+    }
+
+    @media screen and (min-width: $lg) {
+      padding-left: 10.375rem;
+      font-size: 3.3rem;
+    }
+  }
+
+  &__imgFooter {
+    position: absolute;
+    left: 50%;
+    width: 14.45rem;
+    height: 6.56rem;
+
+    @media screen and (min-width: $md) {
+      left: 50%;
+      height: 10.43rem;
+    }
+    @media screen and (min-width: $lg) {
+      height: 10.43rem;
+      left: 60%;
+      height: 15.5rem;
+      width: 33.43rem;
+    }
+  }
+}

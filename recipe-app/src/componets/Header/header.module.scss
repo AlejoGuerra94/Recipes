@@ -1,0 +1,140 @@
+$xsm: 24rem;
+$sm: 35rem;
+$md: 48rem;
+$lg: 72rem;
+$xlg: 90rem;
+$xxlg: 120rem;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+
+  &__navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $lg) {
+      justify-content: space-between;
+      padding: 0 4rem 0 4rem;
+    }
+  }
+
+  &__banner {
+    width: 100vw;
+    position: relative;
+    height: 13.5rem;
+
+    @media screen and (min-width: $md) {
+      height: 15.56rem;
+    }
+
+    @media screen and (min-width: $lg) {
+      height: 26rem;
+    }
+    @media screen and (min-width: $xxlg) {
+      height: 33rem;
+    }
+  }
+}
+
+.contentTitle {
+  display: flex;
+  justify-content: left;
+  padding-left: 3.93rem;
+  width: 100%;
+
+  @media screen and (min-width: $lg) {
+    width: auto;
+  }
+
+  &__.title {
+    text-align: left;
+    font: Monster Clubhouse;
+    letter-spacing: 1.15px;
+    color: #425966;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0;
+  }
+
+  &__title2 {
+    text-align: left;
+    font: normal normal normal 30px/46px Poppins;
+    letter-spacing: 0.86px;
+    color: #d84a4a;
+    opacity: 1;
+  }
+}
+
+.title {
+  text-align: left;
+  font: Monster Clubhouse;
+  letter-spacing: 1.15px;
+  color: #425966;
+  text-transform: capitalize;
+  opacity: 1;
+  margin: 0;
+}
+
+.title2 {
+  text-align: left;
+  font: normal normal normal 30px/46px Poppins;
+  letter-spacing: 0.86px;
+  color: #d84a4a;
+  opacity: 1;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentBanner {
+  position: absolute;
+  display: block;
+  padding: 0;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  line-height: 0.7;
+
+  @media screen and (min-width: $md) {
+    left: 28%;
+  }
+
+  @media screen and (min-width: $lg) {
+    gap: 5rem;
+    padding: 0.87rem 4.37rem;
+  }
+}
+
+.textBanner1 {
+  font-size: 3.18rem;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: $md) {
+    font-size: 4.18rem;
+  }
+
+  @media screen and (min-width: $lg) {
+    font-size: 5.18rem;
+  }
+}
+.textBanner2 {
+  font-size: 2.18rem;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: $md) {
+    font-size: 3.18rem;
+  }
+
+  @media screen and (min-width: $lg) {
+    font-size: 4.18rem;
+  }
+}
