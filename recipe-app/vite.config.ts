@@ -7,5 +7,6 @@ export default defineConfig({
     react(),
     svgr(),
   ],
-  base:'https://alejoguerra94.github.io/recipes'
+  base: "/Recipes"
+
 });
